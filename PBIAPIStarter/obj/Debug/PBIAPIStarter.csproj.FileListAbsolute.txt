@@ -1,0 +1,9 @@
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\bin\Debug\PBIAPIStarter.exe.config
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\bin\Debug\PBIAPIStarter.exe
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\bin\Debug\PBIAPIStarter.pdb
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\bin\Debug\Microsoft.IdentityModel.Clients.ActiveDirectory.xml
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.exe
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.pdb
+C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.csprojResolveAssemblyReference.cache
