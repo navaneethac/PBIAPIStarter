@@ -7,3 +7,6 @@ C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\bin\Debug\Microsoft.Identity
 C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.exe
 C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.pdb
 C:\Development\Power BI\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.csprojResolveAssemblyReference.cache
+C:\Users\v-utamin\Documents\GitHub\PBIAPIStarter\PBIAPIStarter\bin\Debug\PBIAPIStarter.exe.config
+C:\Users\v-utamin\Documents\GitHub\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.exe
+C:\Users\v-utamin\Documents\GitHub\PBIAPIStarter\PBIAPIStarter\obj\Debug\PBIAPIStarter.pdb

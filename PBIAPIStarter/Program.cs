@@ -16,8 +16,8 @@ namespace PBIAPIStarter
     class Program
     {
         // See How to register an app (http://go.microsoft.com/fwlink/?LinkId=519361)
-        // There are few changes required to make this tool work for you. Search for TODO string the code and make changes
-        // Per your requirement
+        // There are few changes required to make this tool work for you. 
+        // Search for TODO string the code and make changes per your requirement
 
 
          //TODO#1: Replace clientID with your client app ID. To learn how to get a client app ID, see How to register an app (http://go.microsoft.com/fwlink/?LinkId=519361)
