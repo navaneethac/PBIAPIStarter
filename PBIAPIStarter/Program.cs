@@ -21,7 +21,7 @@ namespace PBIAPIStarter
 
 
          //TODO#1: Replace clientID with your client app ID. To learn how to get a client app ID, see How to register an app (http://go.microsoft.com/fwlink/?LinkId=519361)
-        private static string clientID = "";
+        private static string clientID = "f3d69fef-fcd2-4828-ba56-30c868c4dbb3";
 
 
         //Replace redirectUri with the uri you used when you registered your app https://login.live.com/oauth20_desktop.srf
@@ -279,29 +279,33 @@ namespace PBIAPIStarter
                     // Push all the records once if total rows < 5000
                     if (!reader.Read())
                     {
-                        try
-                        {
-                            HttpWebRequest request = DatasetRequest(String.Format("{0}/{1}/tables/{2}/rows", datasetsUri, datasetId, tableName.Substring(tableName.IndexOf(".") + 1)), "POST", AccessToken);
+                        //post only if there are rows
+                        if( currentrowset.Count > 0)
+                        { 
+                            try
+                            {
+                                HttpWebRequest request = DatasetRequest(String.Format("{0}/{1}/tables/{2}/rows", datasetsUri, datasetId, tableName.Substring(tableName.IndexOf(".") + 1)), "POST", AccessToken);
 
 
-                            JavaScriptSerializer serializer = new JavaScriptSerializer();
-                            // If current data size is higher than default limit of 2097152
-                            serializer.MaxJsonLength = Int32.MaxValue;
-                            string values = serializer.Serialize(currentrowset);
-                            // Add rows data
-                            jsonBuilder.Append(values);
-                            // Close rows section
-                            jsonBuilder.Append(string.Format("{0}", "}"));
+                                JavaScriptSerializer serializer = new JavaScriptSerializer();
+                                // If current data size is higher than default limit of 2097152
+                                serializer.MaxJsonLength = Int32.MaxValue;
+                                string values = serializer.Serialize(currentrowset);
+                                // Add rows data
+                                jsonBuilder.Append(values);
+                                // Close rows section
+                                jsonBuilder.Append(string.Format("{0}", "}"));
 
-                            //POST request using the json 
-                            Console.WriteLine(PostRequest(request, jsonBuilder.ToString()));
+                                //POST request using the json 
+                                Console.WriteLine(PostRequest(request, jsonBuilder.ToString()));
 
-                            Console.WriteLine("Added All {0} Rows to the dataset {1} and process completed.", currentrow, datasetName);
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine("OOPS! Something went wrong, Please try again later. Below is more information for your reference.");
-                            Console.WriteLine(ex.Message);
+                                Console.WriteLine("Added All {0} Rows to the dataset {1} and process completed.", currentrow, datasetName);
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine("OOPS! Something went wrong, Please try again later. Below is more information for your reference.");
+                                Console.WriteLine(ex.Message);
+                            }
                         }
 
                     }
