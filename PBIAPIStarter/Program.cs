@@ -21,7 +21,7 @@ namespace PBIAPIStarter
 
 
          //TODO#1: Replace clientID with your client app ID. To learn how to get a client app ID, see How to register an app (http://go.microsoft.com/fwlink/?LinkId=519361)
-        private static string clientID = "f3d69fef-fcd2-4828-ba56-30c868c4dbb3";
+        private static string clientID = "";
 
 
         //Replace redirectUri with the uri you used when you registered your app https://login.live.com/oauth20_desktop.srf
